@@ -7,48 +7,54 @@ To implement Opening and Closing using Python and OpenCV.
 2. OpenCV
 ## Algorithm:
 ### Step1:
-<br>
-
+Import the necessary packages.
 
 ### Step2:
-<br>
+Create the Text using cv2.putText.
 
 ### Step3:
-<br>
+Create the structuring element.
 
 ### Step4:
-<br>
+Use Opening operation
 
 ### Step5:
-<br>
+Use Closing Operation
 
- 
 ## Program:
 
-``` Python
 # Import the necessary packages
-
-
-
+``` Python
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+```
 # Create the Text using cv2.putText
-
-
-
+```python
+image=np.zeros((100,500),dtype='uint8')
+font=cv2.FONT_HERSHEY_COMPLEX_SMALL
+cv2.putText(image,'Dharini PV',(5,70),font,2,(255),5,cv2.LINE_AA)
+plt.imshow(image,cmap='gray')
+plt.title('Input Text'), plt.xticks([]), plt.yticks([])
+plt.show()
+```
 # Create the structuring element
-
-
-
+```python
+kernel=cv2.getStructuringElement(cv2.MORPH_CROSS,(7,7))
+```
 # Use Opening operation
-
-
-
-
+```python
+image2=cv2.morphologyEx(image,cv2.MORPH_OPEN,kernel)
+plt.imshow(image2,cmap='gray')
+plt.title('OPENING'), plt.xticks([]), plt.yticks([])
+plt.show()
+```
 # Use Closing Operation
-
-
-
-
-
+```python
+image2=cv2.morphologyEx(image,cv2.MORPH_CLOSE,kernel)
+plt.imshow(image3,cmap='gray')
+plt.title('CLOSING'), plt.xticks([]), plt.yticks([])
+plt.show()
 ```
 ## Output:
 
