@@ -22,7 +22,10 @@ Use Opening operation
 Use Closing Operation
 
 ## Program:
-
+```
+Developed By: Dharini PV
+Register Number: 212222240024
+```
 # Import the necessary packages
 ``` Python
 import numpy as np
@@ -59,28 +62,13 @@ plt.show()
 ## Output:
 
 ### Display the input Image
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+![Screenshot from 2023-10-11 18-32-51](https://github.com/DHARINIPV/OPENING--CLOSING/assets/119400845/9e46ff95-eb3d-4ea5-99b0-d5db8a4417a5)
 
 ### Display the result of Opening
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+![Screenshot from 2023-10-11 18-34-09](https://github.com/DHARINIPV/OPENING--CLOSING/assets/119400845/aef05619-21f9-4e5b-90dd-1d8b2e347f97)
 
 ### Display the result of Closing
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+![Screenshot from 2023-10-11 18-35-06](https://github.com/DHARINIPV/OPENING--CLOSING/assets/119400845/be23c3a8-1547-4bdc-b3cc-4661ad513b60)
 
 ## Result
 Thus the Opening and Closing operation is used in the image using python and OpenCV.
